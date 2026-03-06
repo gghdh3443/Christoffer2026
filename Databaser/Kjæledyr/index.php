@@ -3,7 +3,7 @@ include 'db.php';
 ?>
 
 <?php
-$sql = "SELECT * FROM kjæledyr";
+$sql = "SELECT * FROM kjaeledyr";
 
 $result = $conn->query($sql);
 ?>

@@ -3,10 +3,10 @@ include 'db.php';
 ?>
 
 <?php
-// Hvis elev-id er sendt
+
 if (isset($_GET['id'])) { 
     $id = (int)$_GET['id'];
-    // Hent elevens info
+ 
     $sql = "SELECT * FROM elever WHERE id=$id";
     $result = $conn->query($sql);
     if ($result->num_rows == 0) {
@@ -56,7 +56,7 @@ if (isset($_GET['id'])) {
     </html>
 
 <?php
-// Ellers hvis ikke elev-id er sendt
+
 } else {  // 
     echo "<p>Ingen elev valgt.</p>";
 }

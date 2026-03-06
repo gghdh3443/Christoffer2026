@@ -26,7 +26,7 @@ include 'db.php';
             $alder = $_POST['alder'];
             $eier = $_POST['eier'];
         // Bruker SQL kode for å hente data til den valgte eleven.
-            $sql = "INSERT INTO elever (navn, type, rase, alder, eier)
+            $sql = "INSERT INTO kjaeledyr (navn, type, rase, alder, eier)
                 VALUES ('$navn', '$type', '$rase', '$alder', '$eier')";
 
             if ($conn->query($sql) === TRUE) {
