@@ -19,7 +19,7 @@ class RAM(PCKomponent):
 # Lager noen RAM-objekter for testing.
 
 ram1 = RAM("Corsair", "Vengeance LPX", 800, "Brukt", 2019, 16, 3200)
-ram2 = RAM("G.Skill", "Trident Z RGB", 1200, "Som ny", 2020, 32, 3600)
+ram2 = RAM("G.Skill", "Trident Z RGB", 1200, "Som ny", 2021, 32, 3600)
 
 # Viser informasjon om RAM-modulene.
 ram1.vis_komponent()
