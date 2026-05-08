@@ -74,11 +74,22 @@ def fjern_deltaker():
 def vis_aldersgruppe():
     print("\nDeltakere mellom 15 og 19 år:")
 
+    for i in range(len(fornavn)):
+        if alder[i] >= 15 and alder[i] <= 19:
+            print(f"{fornavn[i]}, {alder[i]}, {kjonn[i]}")
+    
+
 
 #Lager en funksjon som lager en startliste for menn eller kvinner
 def lag_startliste():
     print("\nLag startliste")
 
+    kjonn_valg = input("Lage startsliste for menn eller kvinner?:")
+    
+    if kjonn_valg == "menn":
+        print("\nStartliste for menn:")
+
+        
 
 
 
