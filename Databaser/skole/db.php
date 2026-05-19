@@ -9,9 +9,6 @@ $conn = new mysqli($host, $user, $password, $db);
 if ($conn->connect_error) {
     die("kunne ikke koble til databasen: " . $conn->connect_error);
 }
-$sql = "SELECT * FROM elever";
 
-$result = $conn->query($sql);
-?>
 
 
